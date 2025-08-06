@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title%}My Site{%endblock%}</title>
+        <style>
+            body {font-family: arial;background-color: aquamarine; padding: 20px;}
+            nav a {margin-right: 10px;text-decoration: salmon;color: rgb(20, 126, 175);}
+            nav a:hover{background-color: chartreuse;}
+            main {flex:1;}
+            footer {text-align: center;padding: 10px;}
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Welcome to my site 👩‍💻 !</h1>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/about">about</a>
+                <a href="/contact">contact support</a>
+            </nav>
+        </header>
+        <hr>
+        <div>
+        <main>
+            {%block content %}{%endblock%}
+        </main>
+        </div>
+        <footer>
+            <p>&copy;2025 Jagannadham</p>
+        </footer>
+    </body>
+</html>
